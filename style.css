@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family: 'Open Sans';
+}
+
+body {
+    margin-top: 0px;
+    background-color: white ;
+    padding: 0 ;
+    width: 100vw ; /*Estabelece a largura da página como 100% da área de visualização*/
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ; /*Centraliza todo o conteúdo da página, deixando espaço vazio à esquerda e direita*/
+}
+
+header {
+    width: 980px ; /* Limita a área do cabeçalho à largura da imagem principal. */
+    border-left: 70px solid #EBEBEB ; /*Cria as bordas laterais cinza */
+    border-right: 70px solid #EBEBEB ;
+}
+
+main {
+    width: 980px ; /* Limita a área principal à largura da imagem principal. */
+    border-left: 70px solid #EBEBEB ; /*Cria as bordas laterais cinza */
+    border-right: 70px solid #EBEBEB ;
+}
+
+footer {
+    background-color: #EBEBEB ;
+    font-size: 9px ; 
+    width: 880px ;
+    height: 30px ;
+    padding: 20px ;
+    padding-right: 80px ;
+    align-content: center ;
+    border-left: 70px solid #cbcfd3 ; /*Cria as bordas laterais cinza-escuro */
+    border-right: 70px solid #cbcfd3 ;
+    margin-bottom: 100px ;
+}
+
+h1 {
+    font-style: italic ;
+    font-weight: 500 ;
+    font-size: 20px ;
+    color: #1BB4E8 ;
+    margin-bottom: 0px ;
+    margin-top: 0px ;
+}
+
+h2 {
+    background-color:#1BB4E8 ;
+    color: white ;
+    padding: 5px ;
+    font-size: 25px ;
+    font-style: italic ;
+    font-weight: 400 ;
+    height: 36px ;
+    margin: auto ;
+}
+
+h3 {
+    font-style: italic ;
+    font-weight: 400 ;
+}
+
+nav li {
+    font-size: 9px ;
+    list-style: none ; /*Remove os bullet points da lista*/
+    color: #FFFFFF ;
+    display: inline-block ;
+    padding-left: 25px ;
+    padding-right: 25px ;
+    border-right: 1px solid #FFFFFF ; /* Cria as pequenas "barras" entre as opções de navegação*/
+    color: #FFFFFF ; /* Muda a cor dos links */
+    text-decoration: none ;
+}
+
+nav li:first-child {
+    padding-left: none ; /*Retira o padding à esquerda do primeiro item da lista de navegação*/
+}
+
+nav li:last-child {
+    border-right: none ; /*Retira a borda à direita do último item da lista de navegação*/
+    padding-right: none ;
+}
+
+.album {
+    display: flex ; /*Estabelece as regras para o álbum de 4 fotos na coluna direita*/
+    flex-wrap: wrap ;
+    justify-content: space-between ; /*Alinha as 4 fotos nos cantos do espaço disponível, preenchendo o espaço restante com espaço em branco*/
+    height: 240px ;
+    width: 421px ;
+}
+
+.foto_album {
+    height: 105px ;
+    width: 203px ;
+}
+
+.cabecalho {
+    display: flex ;
+    justify-content: space-between ;
+    background-color: #21272B ;
+    height: 98px ;
+    align-items: center ; /*Centraliza os elementos do cabeçalho no eixo vertical*/
+}
+
+.cabecalho h1+h1 {
+    color: #FFFFFF ; /*Usa seletor adjacente para alterar apenas a cor do segundo h1, "Aluguel de Iates*/
+}
+
+.caixa-texto { /* Define a classe da caixa de texto sobre a imagem */
+    height: 225px ;
+    width: 320px ;
+    position: relative ; /*Mantém a posição da caixa sempre relativa ao elemento-pai (nesse caso, a foto do iate)*/
+    top: 210px ;
+    left: 520px ;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    color: white ;
+    padding-top: 5px ;
+    padding-right: 80px ;
+    padding-left: 25px ;
+    font-style: italic ;
+    font-size: 24px ;
+    font-weight: 400 ;
+}
+
+.caixa-texto p:last-child { /*Pseudo-elemento para modificar a fonte da segunda parte do parágrafo*/
+    font-size: 18px ;
+}
+
+.coluna {
+    float: left ;
+    width: 455px ;
+    background-color: white ;
+    padding-top: 15px ;
+    padding-left: 8px ;
+    padding-right: 8px ;
+    padding-bottom: 45px ;
+}
+
+.fileira { /*Estabelece o elemento-pai que vai conter as duas colunas*/
+    background-color: white ;
+    padding-left: 18px ;
+    padding-right: 18px ;
+}
+
+.fone {
+    color: #C6B07F ;
+    text-decoration: none ;
+}
+
+.icon {
+    float: left ;
+    vertical-align: text-bottom ;
+    padding-right: 10px ;
+}
+
+.marca {
+    width: 30% ; /*Delimita a área da Logo e nome da empresa ("Luxo Aluguel de Iates")*/
+    display: flex ;
+    align-items: center ;
+}
+
+.menu {
+    width: 100% ;
+    align-items: left ;
+    font-size: 10px ;
+    justify-content: left ;
+    padding: 2% ;
+    padding-right: 25px ;
+    margin-top: 45px ;
+}
+
+.menu a {
+    color: #FFFFFF ; /* Muda a cor dos links no menu de navegação*/
+    text-decoration: none ; /* Remove o sublinhado dos links no menu de navegação*/
+}
+
+.menu a:hover { /* Muda a cor dos links quando o mouse passa por cima */
+    color: #1BB4E8;
+}
+
+#barco2 {
+    float: left ;
+    margin: 5px 10px 0px 0px ;
+    height: 40px ;
+}
+
+#caixa {
+    background-image: url("barcoprincipal.jpg") ;
+    height: 495px ;
+    width: 980px ;
+}
+
+#coluna_esquerda {
+    width: 421px;
+}
+
+#logo {
+    height: 50px ;
+    margin: 25px ;
+    margin-right: 10px ;
+}
+
+#nossa_frota {
+    background-color:#C6B07F ;
+}
