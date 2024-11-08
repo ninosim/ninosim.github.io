@@ -1,88 +1,279 @@
 <!DOCTYPE html>
-
-<!-- Grupo: Ellen Nóbrega / Márcio Aranha / Nino Xavier / Rafael Pritski / Vítor Negrão -->
-
 <html lang="pt-BR">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta author="Ellen Nóbrega, Márcio Aranha, Nino Xavier, Rafael Pritski e Vítor Negrão">
-    <meta name="description" content="Luxo Aluguel de Iates">
-    <meta name="keywords" content="Luxo, Aluguel, Iate, Iates, Turismo">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivo Do Atendimento</title>
+    <style>
 
-    <title>Luxo Aluguel de Iates</title>
+        /* Estilos gerais para manter a responsividade */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%; /* Ajusta para 100% da largura da tela */
+        }
+
+        .content {
+            width: 90%; /* Reduz a largura em telas menores */
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Media queries para diferentes larguras de tela */
+        @media (max-width: 768px) {
+            
+            
+            .sidebar {
+                width: 40px; /* Reduz a largura da barra lateral */
+                padding-top: 60px;
+            }
+
+            .sidebar img {
+                width: 25px; /* Ajusta o tamanho dos ícones */
+                margin: 15px 0;
+            }
+
+            .content {
+                width: 100%; /* Ocupará a largura total da tela */
+                max-width: none; /* Remove o limite de largura */
+                padding: 15px;
+            }
+
+            .content .buttons button {
+                padding: 8px 15px; /* Reduz o tamanho dos botões */
+                font-size: 0.9em; /* Diminui a fonte */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header img {
+                width: 100px; /* Ajusta o logo para telas menores */
+            }
+
+            .content h2 {
+                font-size: 1.2em; /* Diminui o tamanho do título */
+            }
+
+            .content label {
+                font-size: 0.9em; /* Ajusta o tamanho da fonte das labels */
+            }
+
+            .checkbox-group label {
+                font-size: 0.85em; /* Reduz o tamanho da fonte nas opções */
+            }
+
+            .content .buttons {
+                flex-direction: column; /* Coloca os botões em uma coluna */
+                align-items: center;
+            }
+
+            .content .buttons button {
+                width: 100%; /* Faz os botões ocuparem a largura total */
+                margin-bottom: 10px; /* Adiciona margem inferior para separação */
+            }
+        }
+
+
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .header {
+            background-color: #d32f2f;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header img {
+            width: 150px;
+        }
+        .content {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .content h2 {
+            text-align: center;
+            color: #d32f2f;
+            text-decoration: underline;
+            font-size: 25px;
+        }
+        .content h3 {
+            text-align: center;
+            margin-top: 25px;
+            
+        }    
+        .content label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .content input[type="checkbox"],
+        .content input[type="text"] {
+            margin-bottom: 6ppx; /* Reduzido para metade do espaçamento atual */
+        }
+        .input-text {
+            width: 100%; /* Ajusta para ocupar 100% da largura do contêiner */
+            box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+        }
+
+        .section label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px; /* Adiciona espaçamento entre os elementos */
+        }
+        
+        .section input[type="text"] {
+            margin-left: 10px; /* Espaçamento entre o texto e a caixa de entrada */
+            flex: 1; /* Faz com que a caixa de texto se expanda conforme necessário */
+        }
+        
+        
+        
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5px; /* Ajustando para metade do espaçamento atual */
+        }
+        .checkbox-group label input {
+            margin-right: 10px;
+        }
+        .content .checkbox-group-title {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .content .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .content .buttons button {
+            padding: 10px 20px;
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 100%;
+            background-color: #d32f2f;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+        }
+        .sidebar img {
+            width: 30px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <div class="cabecalho">
-            <div class="marca">
-                <img id="logo" src="barco1.png" alt="Ícone branco de Iate.">
-                <div>
-                    <h1>Luxo</h1>
-                    <h1>Aluguel de Iates</h1>
+    <div class="sidebar" >
+        
+        <a href="inicial.html"><img src="inicial.png" alt="Inicial"></a>
+        <a href="circulatorio.html"><img src="circulatorio.png" alt="Circulatório"></a>
+        <a href="neuro.html"><img src="neuro.png" alt="Neuro"></a>
+        <a href="evolucao.html"><img src="evolucao.png" alt="Evolução"></a>
+        <a href="parametros.html"><img src="parametros.png" alt="Parâmetros"></a>
+        <a href="#"><img src="salvar.png" alt="Salvar"></a> <!-- Ícone de salvar -->
+    
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <img src="PaiLogoHorizontalTransp.png" alt="PAI Logo">
+        </div>
+        <div class="content">
+            <h2>Exame Inicial</h2>
+
+            <div class="section">
+                <h3>Hemorragia</h3>
+                <label>
+                    <input type="checkbox" name="hemorragia_externa"> Externa.
+                    <input type="text" name="hemorragia_externa_local" placeholder="Local">
+                </label>
+                <label>
+                    <input type="checkbox" name="hemorragia_interna"> Interna.
+                    <input type="text" name="hemorragia_interna_local" placeholder="Local">
+                </label>
+            </div>
+
+            <div class="section">
+                <h3>Tipos de Ferimentos</h3>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="ferimento_laceracao"> Laceração</label>
+                    <label><input type="checkbox" name="ferimento_incisao"> Incisão</label>
+                    <label><input type="checkbox" name="ferimento_perf"> Perfuração</label>
+                    <label><input type="checkbox" name="ferimento_escoriacao"> Escoriação</label>
+                    <label><input type="checkbox" name="ferimento_amputacao"> Amputação</label>
                 </div>
             </div>
 
-            <!-- Menu de Navegação do site -->
-
-            <nav>
-                <ul class="menu">
-                    <li><a href="#" class="link">PÁGINA INICIAL</a></li>
-                    <li><a href="#" class="link">ALUGUEL DE IATES</a></li>
-                    <li><a href="#" class="link">DESTINOS</a></li>
-                    <li><a href="#" class="link">TRIPULAÇÃO</a></li>
-                    <li><a href="#" class="link">CONTATO</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div id="caixa">
-            <div class="caixa-texto">
-                <p>Você só encontra coisas boas, se combinar luxo e paixão.</p>
-                <img id="barco2" src="barco2.png" alt="Ícone branco de Iate.">
-                <p>Ligue agora para agendar as férias de sua vida: <a href="tel:(00)8000-0000" class="fone">(00) 8000-0000</a></p></i>
-            </div>
-        </div>
-
-    <!-- Área das Duas Colunas com Texto e Imagens -->
-
-        <div class="fileira">
-            <div class="coluna">
-                <h2>
-                    <img class="icon" src="destino.png" alt="Rosa dos Ventos">
-                    Destinos
-                </h2>
-                <h3>Sou um título. Clique aqui para me editar.</h3>
-                <p>Clique aqui para adicionar seu texto e me editar. É fácil! Basta clicar em "Editar Texto" ou clicar duas vezes sobre mim e poderá adicionar seu próprio conteúdo e mudar fontes. Sou um ótimo lugar para contar sua história e permitir que seus visitantes saibam um pouco mais sobre você.</p>
-                <div class="coluna_album">
-                    <img src="barcodestino.jpg" alt="Barcos em uma Praia Paradisíaca" id="barcodestino">
+            <div class="section">
+                <h3>Vias Aéreas</h3>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="via_livre"> Livre</label>
+                    <label><input type="checkbox" name="via_obstr_parcial"> Obstrução Parcial</label>
+                    <label><input type="checkbox" name="via_obstr_total"> Obstrução Total</label>
+                    <label><input type="checkbox" name="via_corpo_estranho"> Corpo Estranho</label>
+                    <label><input type="checkbox" name="via_broncoaspiracao"> Broncoaspiração</label>
+                    <label><input type="checkbox" name="via_edema_glote"> Edema de Glote</label>
                 </div>
             </div>
-            <div class="coluna">
-                <h2 id="nossa_frota">
-                    <img class="icon" src="nossafrota.png" alt="Timão de Navio"> 
-                    Nossa frota
-                </h2>
-                <h3>Sou um título. Clique aqui para me editar.</h3>
-                <p>Clique aqui para adicionar seu texto e me editar. É fácil! Basta clicar em "Editar Texto" ou clicar duas vezes sobre mim e poderá adicionar seu próprio conteúdo e mudar fontes. Sou um ótimo lugar para contar sua história e permitir que seus visitantes saibam um pouco mais sobre você.</p>
-                <div class="album">
-                    <img class="foto_album" src="barconossafrota2.jpg" alt="Dois iates no mar, com nuvens no horizonte">
-                    <img class="foto_album"" src="barconossafrota1.jpg" alt="Iate de vela ao pôr do sol">
-                    <img class="foto_album" src="barconossafrota1.jpg" alt="Iate de vela ao pôr do sol">
-                    <img class="foto_album" src="barconossafrota2.jpg" alt="Dois iates no mar, com nuvens no horizonte">
+
+            <div class="section">
+                <h3>Respiratório</h3>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="res_normal"> Normal</label>
+                    <label><input type="checkbox" name="res_insuf_aguda"> Insuficiência Resp. Aguda</label>
+                    <label><input type="checkbox" name="res_parada_ventilatoria"> Parada Ventilatória</label>
+                    <label><input type="checkbox" name="res_ventil_espontanea"> Ventilação Espontânea</label>
+                    <label><input type="checkbox" name="res_assistida"> Assistida</label>
+                    <label><input type="checkbox" name="res_ritmo_irregular"> Ritmo Irregular</label>
+                    <label><input type="checkbox" name="res_sibilos"> Sibilos</label>
+                    <label><input type="checkbox" name="res_roncos"> Roncos</label>
+                    <label><input type="checkbox" name="res_crepitantes"> Crepitantes</label>
+                    <label><input type="checkbox" name="res_hemopstise"> Hemoptise</label>
+                    <label><input type="checkbox" name="res_dimin_mvm"> Diminuição MV</label>
+                    <label><input type="checkbox" name="res_exp_normal"> Expansibilidade Normal</label>
                 </div>
-            </div>
-        </div>
-    </main>
+                <div class="buttons">
+                    <a href="00.Queixas2.html"><button>Anterior</button></a>
+                    <a href="02.Circulatorio2.html"><button>Próximo</button></a>
+                </div>
+    </div>
 </body>
-
-<!-- Texto do rodapé -->
-    <footer>
-        <p>© 2023 por Luxo Aluguel de Iates</p>
-    </footer>
 </html>
