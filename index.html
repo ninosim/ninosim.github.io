@@ -1,279 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivo Do Atendimento</title>
-    <style>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxo - Aluguel de iates</title>
+    <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/default.css" />
+  </head>
 
-        /* Estilos gerais para manter a responsividade */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%; /* Ajusta para 100% da largura da tela */
-        }
-
-        .content {
-            width: 90%; /* Reduz a largura em telas menores */
-            max-width: 400px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        /* Media queries para diferentes larguras de tela */
-        @media (max-width: 768px) {
-            
-            
-            .sidebar {
-                width: 40px; /* Reduz a largura da barra lateral */
-                padding-top: 60px;
-            }
-
-            .sidebar img {
-                width: 25px; /* Ajusta o tamanho dos ícones */
-                margin: 15px 0;
-            }
-
-            .content {
-                width: 100%; /* Ocupará a largura total da tela */
-                max-width: none; /* Remove o limite de largura */
-                padding: 15px;
-            }
-
-            .content .buttons button {
-                padding: 8px 15px; /* Reduz o tamanho dos botões */
-                font-size: 0.9em; /* Diminui a fonte */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header img {
-                width: 100px; /* Ajusta o logo para telas menores */
-            }
-
-            .content h2 {
-                font-size: 1.2em; /* Diminui o tamanho do título */
-            }
-
-            .content label {
-                font-size: 0.9em; /* Ajusta o tamanho da fonte das labels */
-            }
-
-            .checkbox-group label {
-                font-size: 0.85em; /* Reduz o tamanho da fonte nas opções */
-            }
-
-            .content .buttons {
-                flex-direction: column; /* Coloca os botões em uma coluna */
-                align-items: center;
-            }
-
-            .content .buttons button {
-                width: 100%; /* Faz os botões ocuparem a largura total */
-                margin-bottom: 10px; /* Adiciona margem inferior para separação */
-            }
-        }
-
-
-        
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-        }
-        .header {
-            background-color: #d32f2f;
-            color: white;
-            width: 100%;
-            text-align: center;
-            padding: 10px 0;
-        }
-        .header img {
-            width: 150px;
-        }
-        .content {
-            width: 100%;
-            max-width: 400px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-        .content h2 {
-            text-align: center;
-            color: #d32f2f;
-            text-decoration: underline;
-            font-size: 25px;
-        }
-        .content h3 {
-            text-align: center;
-            margin-top: 25px;
-            
-        }    
-        .content label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        .content input[type="checkbox"],
-        .content input[type="text"] {
-            margin-bottom: 6ppx; /* Reduzido para metade do espaçamento atual */
-        }
-        .input-text {
-            width: 100%; /* Ajusta para ocupar 100% da largura do contêiner */
-            box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
-        }
-
-        .section label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px; /* Adiciona espaçamento entre os elementos */
-        }
-        
-        .section input[type="text"] {
-            margin-left: 10px; /* Espaçamento entre o texto e a caixa de entrada */
-            flex: 1; /* Faz com que a caixa de texto se expanda conforme necessário */
-        }
-        
-        
-        
-        .checkbox-group {
-            display: flex;
-            flex-direction: column;
-        }
-        .checkbox-group label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.5px; /* Ajustando para metade do espaçamento atual */
-        }
-        .checkbox-group label input {
-            margin-right: 10px;
-        }
-        .content .checkbox-group-title {
-            text-align: center;
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        .content .buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 40px;
-        }
-        .content .buttons button {
-            padding: 10px 20px;
-            background-color: #d32f2f;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 50px;
-            height: 100%;
-            background-color: #d32f2f;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 80px;
-        }
-        .sidebar img {
-            width: 30px;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="sidebar" >
-        
-        <a href="inicial.html"><img src="inicial.png" alt="Inicial"></a>
-        <a href="circulatorio.html"><img src="circulatorio.png" alt="Circulatório"></a>
-        <a href="neuro.html"><img src="neuro.png" alt="Neuro"></a>
-        <a href="evolucao.html"><img src="evolucao.png" alt="Evolução"></a>
-        <a href="parametros.html"><img src="parametros.png" alt="Parâmetros"></a>
-        <a href="#"><img src="salvar.png" alt="Salvar"></a> <!-- Ícone de salvar -->
-    
-    </div>
-
-    <div class="container">
-        <div class="header">
-            <img src="PaiLogoHorizontalTransp.png" alt="PAI Logo">
+  <body>
+    <div class="page">
+    <header>
+      <div id="title">
+        <img src="images/barco1.png" alt="ícone de barco" />
+        <div class="headtitle">
+          <h1>Luxo</h1>
+          <h2>Aluguel de Iates</h2>
         </div>
-        <div class="content">
-            <h2>Exame Inicial</h2>
+      </div>
 
-            <div class="section">
-                <h3>Hemorragia</h3>
-                <label>
-                    <input type="checkbox" name="hemorragia_externa"> Externa.
-                    <input type="text" name="hemorragia_externa_local" placeholder="Local">
-                </label>
-                <label>
-                    <input type="checkbox" name="hemorragia_interna"> Interna.
-                    <input type="text" name="hemorragia_interna_local" placeholder="Local">
-                </label>
-            </div>
+      <nav>
+        <ul class="navmenu">
+          <li><a href="index.html" class="accent">Página inicial</a></li>
+          <li><a href="aluguel.html">Aluguel de iates</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="tripulacao.html">Tripulação</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            <div class="section">
-                <h3>Tipos de Ferimentos</h3>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="ferimento_laceracao"> Laceração</label>
-                    <label><input type="checkbox" name="ferimento_incisao"> Incisão</label>
-                    <label><input type="checkbox" name="ferimento_perf"> Perfuração</label>
-                    <label><input type="checkbox" name="ferimento_escoriacao"> Escoriação</label>
-                    <label><input type="checkbox" name="ferimento_amputacao"> Amputação</label>
-                </div>
-            </div>
+    <main>
+      <section id="principal">
+        <img src="images/barcoprincipal.jpg" alt="barco com pessoas" />
+        <div class="box">
+          <h2>Você só encontra coisas boas, se combinar luxo e paixão.</h2>
+          <div class="insidebox">
+            <img src="images/barco2.png" alt="ícone de barco" />
+            <p>
+              Ligue agora para agendar as férias de sua vida:
+              <span>(00) 8000-0000</span>
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <div class="section">
-                <h3>Vias Aéreas</h3>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="via_livre"> Livre</label>
-                    <label><input type="checkbox" name="via_obstr_parcial"> Obstrução Parcial</label>
-                    <label><input type="checkbox" name="via_obstr_total"> Obstrução Total</label>
-                    <label><input type="checkbox" name="via_corpo_estranho"> Corpo Estranho</label>
-                    <label><input type="checkbox" name="via_broncoaspiracao"> Broncoaspiração</label>
-                    <label><input type="checkbox" name="via_edema_glote"> Edema de Glote</label>
-                </div>
-            </div>
+      <div class="topics">
+        <section class="destinos">
+          <div class="subtitle">
+            <img src="images/destino.png" alt="ícone de leme" />
+            <h2>Destinos</h2>
+          </div>
+          <h3>Sou um título. Clique aqui para me editar.</h3>
+          <p>
+            Clique aqui para adicionar seu texto e me editar. É fácil. Basta
+            clicar em "Editar Texto" ou clicar duas vezes sobre mim e poderá
+            adicionar seu próprio conteúdo e mudar fontes. Sou um ótimo lugar
+            para contar sua história e permitir que seus visitantes saibam um
+            pouco mais sobre você.
+          </p>
 
-            <div class="section">
-                <h3>Respiratório</h3>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="res_normal"> Normal</label>
-                    <label><input type="checkbox" name="res_insuf_aguda"> Insuficiência Resp. Aguda</label>
-                    <label><input type="checkbox" name="res_parada_ventilatoria"> Parada Ventilatória</label>
-                    <label><input type="checkbox" name="res_ventil_espontanea"> Ventilação Espontânea</label>
-                    <label><input type="checkbox" name="res_assistida"> Assistida</label>
-                    <label><input type="checkbox" name="res_ritmo_irregular"> Ritmo Irregular</label>
-                    <label><input type="checkbox" name="res_sibilos"> Sibilos</label>
-                    <label><input type="checkbox" name="res_roncos"> Roncos</label>
-                    <label><input type="checkbox" name="res_crepitantes"> Crepitantes</label>
-                    <label><input type="checkbox" name="res_hemopstise"> Hemoptise</label>
-                    <label><input type="checkbox" name="res_dimin_mvm"> Diminuição MV</label>
-                    <label><input type="checkbox" name="res_exp_normal"> Expansibilidade Normal</label>
-                </div>
-                <div class="buttons">
-                    <a href="00.Queixas2.html"><button>Anterior</button></a>
-                    <a href="02.Circulatorio2.html"><button>Próximo</button></a>
-                </div>
+          <img
+            src="images/barcodestino.jpg"
+            alt="barcos numa praia com coqueiros"
+          />
+        </section>
+
+        <section class="frota">
+          <div class="subtitle">
+            <img src="images/nossafrota.png" alt="ícone de leme" />
+            <h2>Nossa frota</h2>
+          </div>
+          <h3>Sou um título. Clique aqui para me editar.</h3>
+          <p>
+            Clique aqui para adicionar seu texto e me editar. É fácil. Basta
+            clicar em "Editar Texto" ou clicar duas vezes sobre mim e poderá
+            adicionar seu próprio conteúdo e mudar fontes. Sou um ótimo lugar
+            para contar sua história e permitir que seus visitantes saibam um
+            pouco mais sobre você.
+          </p>
+
+          <div class="container">
+            <img src="images/barconossafrota2.jpg" alt="imagem de barco" />
+            <img
+              src="images/barconossafrota1.jpg"
+              alt="imagem de barco com vela"
+            />
+            <img
+              src="images/barconossafrota1.jpg"
+              alt="imagem de barco com vela"
+            />
+            <img src="images/barconossafrota2.jpg" alt="imagem de barco" />
+          </div>
+        </section>
+      </div>
+    </main>
     </div>
-</body>
+
+    <footer>
+      <p>© 2023 por Luxo Aluguel de Iates</p>
+    </footer>
+  </body>
 </html>
