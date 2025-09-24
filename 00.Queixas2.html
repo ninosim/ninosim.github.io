@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PAI - Pronto Atendimento Institucional</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <a href="00.Queixas2.html" class="sidebar-item active"><img src="queixas.png" alt="Exame Inicial"></a>
+        <a href="01.inicial2.html" class="sidebar-item"><img src="respiratorio.png" alt="Respiratório"></a>
+        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="circulatorio.png" alt="Circulatório"></a>
+        <a href="03.Neuro2.html" class="sidebar-item"><img src="neuro.png" alt="Neuro"></a>
+        <a href="04.Evolucao2.html" class="sidebar-item"><img src="evolucao.png" alt="Evolução"></a>
+        <a href="05.Parametros2.html" class="sidebar-item"><img src="parametros.png" alt="Parâmetros"></a>
+        <a href="index.html" class="sidebar-item"><img src="sair.png" alt="Login"></a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="PaiLogoHorizTransp.png" alt="PAI Logo">
+        </div>
+    
+        <div class="content">
+            <form>
+                <label>Motivo do Atendimento<input type="text" class="input-text" id="motivo_atendimento" placeholder="Descreva o motivo do atendimento"></label>
+                <fieldset class="section">
+                    <legend>Principais Queixas</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="dificuldade_respiratoria"> Dificuldade Respiratória</label>
+                        <label><input type="checkbox" id="febre"> Febre</label>
+                        <label><input type="checkbox" id="nauseas"> Náuseas</label>
+                        <label><input type="checkbox" id="alergia"> Alergia</label>
+                        <label><input type="checkbox" id="vomitos"> Vômitos</label>
+                        <label><input type="checkbox" id="tonturas"> Tonturas</label>
+                        <label><input type="checkbox" id="dor"> Dor <input type="text" id="dor_local" placeholder="Local"></label>
+                        <label><input type="checkbox" id="queixa_outro"> Outro <input type="text" id="queixa_outro_texto" placeholder="Qual?"></label>
+                    </div>
+                </fieldset>
+                <fieldset class="section">
+                    <legend>Estado Inicial</legend>
+                    <div class="checkbox-group">
+                        <label><input type="radio" id="inicial_leve" name="estado_inicial_grau" value="Leve"> Leve</label>
+                        <label><input type="radio" id="inicial_moderado" name="estado_inicial_grau" value="Moderado"> Moderado</label>
+                        <label><input type="radio" id="inicial_grave" name="estado_inicial_grau" value="Grave"> Grave</label>
+                        <label><input type="radio" id="inicial_critico" name="estado_inicial_grau" value="Crítico"> Crítico</label>
+                    </div>
+                </fieldset>
+                <fieldset class="section">
+                    <legend>Estabilidade</legend>
+                    <div class="checkbox-group">
+                        <label><input type="radio" id="inicial_estavel" name="estado_inicial_estabilidade" value="Estável"> Estável</label>
+                        <label><input type="radio" id="inicial_instavel" name="estado_inicial_estabilidade" value="Instável"> Instável</label>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="buttons">
+                <a href="000.dadospaciente2.html"><button>Anterior</button></a>
+                <a href="01.inicial2.html"><button>Próximo</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/realce.js"></script>
+
+</body>
+</html>

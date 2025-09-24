@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAI - Exame Inicial</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <a href="00.Queixas2.html" class="sidebar-item"><img src="queixas.png" alt="Exame Inicial"></a>
+        <a href="01.inicial2.html" class="sidebar-item active"><img src="respiratorio.png" alt="Respiratório"></a>
+        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="circulatorio.png" alt="Circulatório"></a>
+        <a href="03.Neuro2.html" class="sidebar-item"><img src="neuro.png" alt="Neuro"></a>
+        <a href="04.Evolucao2.html" class="sidebar-item"><img src="evolucao.png" alt="Evolução"></a>
+        <a href="05.Parametros2.html" class="sidebar-item"><img src="parametros.png" alt="Parâmetros"></a>
+        <a href="index.html" class="sidebar-item"><img src="sair.png" alt="Login"></a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="PaiLogoHorizTransp.png" alt="PAI Logo">
+        </div>
+
+        <div class="content">
+            <form>
+                <h2>Exame Inicial</h2>
+                <fieldset class="section">
+                    <legend>Hemorragia</legend>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="hemorragia_externa"> Externa:
+                            <input type="text" id="hemorragia_externa_local" placeholder="Local">
+                        </label>
+                        <label>
+                            <input type="checkbox" id="hemorragia_interna"> Interna:
+                            <input type="text" id="hemorragia_interna_local" placeholder="Local">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="section">
+                    <legend>Tipos de Ferimentos</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="ferimento_laceracao"> Laceração</label>
+                        <label><input type="checkbox" id="ferimento_incisao"> Incisão</label>
+                        <label><input type="checkbox" id="ferimento_perf"> Perfuração</label>
+                        <label><input type="checkbox" id="ferimento_escoriacao"> Escoriação</label>
+                        <label><input type="checkbox" id="ferimento_amputacao"> Amputação <input type="text" id="amputacao_local" placeholder="Local"></label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="section">
+                    <legend>Vias Aéreas</legend>
+                    <div class="checkbox-group">
+                        <label><input type="radio" id="via_livre" name="vias_aereas" value="Livre"> Livre</label>
+                        <label><input type="radio" id="via_obstr_parcial" name="vias_aereas" value="Obstrução Parcial"> Obstrução Parcial</label>
+                        <label><input type="radio" id="via_obstr_total" name="vias_aereas" value="Obstrução Total"> Obstrução Total</label>
+                        <label><input type="radio" id="via_corpo_estranho" name="vias_aereas" value="Corpo Estranho"> Corpo Estranho</label>
+                        <label><input type="radio" id="via_broncoaspiracao" name="vias_aereas" value="Broncoaspiração"> Broncoaspiração</label>
+                        <label><input type="radio" id="via_edema_glote" name="vias_aereas" value="Edema de Glote"> Edema de Glote</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="section">
+                    <legend>Respiratório</legend>
+                    <div class="checkbox-group" >
+                        <label><input type="checkbox" id="res_normal"> Normal</label>
+                        <label><input type="checkbox" id="res_insuf_aguda"> Insuficiência Resp. Aguda</label>
+                        <label><input type="checkbox" id="res_parada_ventilatoria"> Parada Ventilatória</label>
+                        <label><input type="checkbox" id="res_ventil_espontanea"> Ventilação Espontânea</label>
+                        <label><input type="checkbox" id="res_assistida"> Assistida</label>
+                        <label><input type="checkbox" id="res_ritmo_irregular"> Ritmo Irregular</label>
+                        <label><input type="checkbox" id="res_sibilos"> Sibilos</label>
+                        <label><input type="checkbox" id="res_roncos"> Roncos</label>
+                        <label><input type="checkbox" id="res_crepitantes"> Crepitantes</label>
+                        <label><input type="checkbox" id="res_hemopstise"> Hemoptise</label>
+                        <label><input type="checkbox" id="res_dimin_mv"> Diminuição MV</label>
+                        <label><input type="checkbox" id="res_exp_normal"> Expansibilidade Normal</label>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="buttons">
+                <a href="00.Queixas2.html"><button>Anterior</button></a>
+                <a href="02.Circulatorio2.html"><button>Próximo</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/realce.js"></script>
+
+</body>
+</html>

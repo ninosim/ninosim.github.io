@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title role="dddd">PAI - Pronto Evolução e Conduta</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <a href="00.Queixas2.html" class="sidebar-item"><img src="queixas.png" alt="Exame Inicial"></a>
+        <a href="01.inicial2.html" class="sidebar-item"><img src="respiratorio.png" alt="Respiratório"></a>
+        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="circulatorio.png" alt="Circulatório"></a>
+        <a href="03.Neuro2.html" class="sidebar-item"><img src="neuro.png" alt="Neuro"></a>
+        <a href="04.Evolucao2.html" class="sidebar-item active"><img src="evolucao.png" alt="Evolução"></a>
+        <a href="05.Parametros2.html" class="sidebar-item"><img src="parametros.png" alt="Parâmetros"></a>
+        <a href="index.html" class="sidebar-item"><img src="sair.png" alt="Login"></a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="PaiLogoHorizTransp.png" alt="PAI Logo">
+        </div>
+
+        <div class="content">
+            <form>
+                <h2>Evolução/Conduta</h2>
+
+                <input type="text" id="campoevolucao" class="input-text" placeholder="Descreva aqui observações sobre a evolução e conduta...">
+
+                <fieldset class="section">
+                <legend>Procedimentos</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="colarCervical"> Colar Cervical</label>
+                        <label><input type="checkbox" id="mascAmbu"> Máscara/Ambu</label>
+                        <label><input type="checkbox" id="curativo"> Curativo</label>
+                        <label><input type="checkbox" id="compressaoDireta"> Compressão Direta</label>
+                        <label><input type="checkbox" id="elevacaoMembro"> Elevação Membro</label>
+                        <label><input type="checkbox" id="compressaoPontosArt"> Compressão Pontos Arteriais</label>
+                        <label><input type="checkbox" id="imobilizacao"> Imobilização</label>
+                        <label><input type="checkbox" id="imobTalaFlexivel"> Imobilização com Tala Fácil</label>
+                        <label><input type="checkbox" id="imobTalaTracao"> Imobilização com Tala Tração</label>
+                        <label><input type="checkbox" id="imobBandagens"> Imobilização com Bandagens</label>
+                        <label><input type="checkbox" id="imobPrancha"> Imob. Prancha Rígida</label>
+                    </div>
+                </fieldset>
+            </form>
+
+        <div class="buttons">
+            <a href="03.Neuro2.html"><button>Anterior</button></a>
+            <a href="05.Parametros2.html"><button>Próximo</button></a>
+        </div>
+    </div>
+
+    <script src="js/realce.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="css/dadospaciente.css"> 
+</head>
+
+<body>
+    <nav class="sidebar">
+        <a href="00.Queixas2.html" class="sidebar-item"><img src="queixas.png" alt="Exame Inicial"></a>
+        <a href="01.inicial2.html" class="sidebar-item"><img src="respiratorio.png" alt="Respiratório"></a>
+        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="circulatorio.png" alt="Circulatório"></a>
+        <a href="03.Neuro2.html" class="sidebar-item"><img src="neuro.png" alt="Neuro"></a>
+        <a href="04.Evolucao2.html" class="sidebar-item"><img src="evolucao.png" alt="Evolução"></a>
+        <a href="05.Parametros2.html" class="sidebar-item"><img src="parametros.png" alt="Parâmetros"></a>
+        <a href="index.html" class="sidebar-item"><img src="sair.png" alt="Login"></a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="PaiLogoHorizTransp.png" alt="PAI Logo">
+        </div>
+        <div class="content">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Insira seu nome" required>
+            
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+            
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero" required>
+                    <option value="" disabled selected>Selecione o gênero da pessoa paciente</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            
+                <label for="periodo">Período:</label>
+                <select id="periodo" name="periodo" required>
+                    <option value="" disabled selected>Selecione o período da pessoa paciente</option>
+                    <option value="matutino">Matutino</option>
+                    <option value="vespertino">Vespertino</option>
+                    <option value="noturno">Noturno</option>
+                </select>
+            
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" name="curso" placeholder="Digite o nome do curso" required>
+            </form>
+            <div class="buttons">
+                <a href="index.html"><button>Anterior</button></a>
+                <a href="00.Queixas2.html"><button>Próximo</button></a>
+            </div>
+        </div>    
+    </div>
+
+    <script src="js/realce.js"></script>
+    
+
+
+</body>
+</html>

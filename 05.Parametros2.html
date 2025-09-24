@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAI - Sinais Vitais e Parâmetros Evolutivos</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <a href="00.Queixas2.html" class="sidebar-item"><img src="queixas.png" alt="Exame Inicial"></a>
+        <a href="01.inicial2.html" class="sidebar-item"><img src="respiratorio.png" alt="Respiratório"></a>
+        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="circulatorio.png" alt="Circulatório"></a>
+        <a href="03.Neuro2.html" class="sidebar-item"><img src="neuro.png" alt="Neuro"></a>
+        <a href="04.Evolucao2.html" class="sidebar-item"><img src="evolucao.png" alt="Evolução"></a>
+        <a href="05.Parametros2.html" class="sidebar-item active"><img src="parametros.png" alt="Parâmetros"></a>
+        <a href="index.html" class="sidebar-item"><img src="sair.png" alt="Login"></a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="PaiLogoHorizTransp.png" alt="PAI Logo">
+        </div>
+
+        <div class="content">
+            <h2>Sinais Vitais e<br>Parâmetros Evolutivos</h2>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <th>Hora</th>
+                        <th>PA</th>
+                        <th>FC</th>
+                        <th>SpO²</th>
+                        <th>HGT</th>
+                        <th>Temp</th>
+                        <th>Glasgow</th>
+                    </tr>
+                    <tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora1" autofocus></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa1"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC1"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO1"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT1"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp1"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow1"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora2"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa2"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC2"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO2"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT2"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp2"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow2"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora3"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa3"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC3"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO3"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT3"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp3"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow3"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora4"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa4"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC4"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO4"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT4"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp4"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow4"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora5"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa5"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC5"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO5"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT5"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp5"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow5"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora6"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa6"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC6"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO6"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT6"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp6"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow6"></td>
+                    </tr><tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora7"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa7"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC7"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO7"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT7"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp7"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow7"></td>
+                    </tr><tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora8"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa8"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC8"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO8"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT8"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp8"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow8"></td>
+                    </tr><tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora9"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa9"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC9"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO9"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT9"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp9"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow9"></td>
+                    </tr><tr>
+                        <td><input class="input-cell" type="time" id="tabelaHora10"></td>
+                        <td><input class="input-cell" type="text" id="tabelaPa10"></td>
+                        <td><input class="input-cell" type="text" id="tabelaFC10"></td>
+                        <td><input class="input-cell" type="text" id="tabelaSPO10"></td>
+                        <td><input class="input-cell" type="text" id="tabelaHGT10"></td>
+                        <td><input class="input-cell" type="text" id="tabelaTemp10"></td> 
+                        <td><input class="input-cell" type="text" id="tabelaGlasgow10"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buttons">
+                <a href="04.Evolucao2.html"><button>Anterior</button></a>
+                <a href="000.dadospaciente2.html"><button>Salvar</button></a>
+            </div>
+    </div>
+<script src="js/realce.js"></script>
+</body>
+</html>

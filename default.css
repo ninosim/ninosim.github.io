@@ -1,0 +1,255 @@
+body, html {
+    display: flex;
+    justify-content: center; /* Centraliza o contêiner */
+    align-items: flex-start; /* Ajuste conforme necessário */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Garante que o body ocupe toda a largura */
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 600px; /* Define uma largura máxima para o contêiner */
+    padding: 0px; /* Ajusta o padding conforme necessário */
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%; /* Torna responsivo */
+    max-width: 600px; /* Limite de largura em telas grandes */
+    padding: 20px;
+    
+    margin: 0 auto; /* Centraliza a `.content` */
+    box-sizing: border-box;
+}
+
+
+.header {
+    background-color: #d32f2f;
+    color: white;
+    width: 200%;
+    height: 100px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex; /* Adiciona flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+
+
+.header img {
+    margin: 0; /* Remove qualquer margem */
+    width: 200px; /* Ajuste se necessário para manter a proporção */
+    max-width: 100%; /* Garante que não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção */
+}
+
+
+
+.content h2 {
+    text-align: center;
+    color: #d32f2f;
+    text-decoration: underline;
+    font-size: 25px;
+    
+}
+.table-responsive {
+    overflow-x: auto; /* Adiciona rolagem horizontal quando necessário */
+    width: 100%; /* Garante que o contêiner use toda a largura */
+    box-sizing: border-box;
+}
+
+.table {
+    table-layout: auto;
+    width: 100%; /* Faz a tabela usar a largura completa do contêiner */
+    max-width: 100%; /* Impede que a tabela ultrapasse a largura */
+    border-collapse: collapse; /* Remove os espaços entre as células */
+    box-sizing: border-box;
+}
+
+.table th, .table td {
+    border: 1px solid #000;
+    text-align: center;
+    
+    white-space: normal;
+    padding: 5px;
+    
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    
+    
+}
+
+.input-cell {
+    width: 85%;
+    border: none;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    font-size: 14px;
+    padding: 2px;
+    
+}
+
+
+.content h3 {
+    text-align: center;
+    margin-top: 25px;
+    
+}    
+.content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.content input[type="checkbox"],
+.content input[type="text"] {
+    margin-bottom: 6ppx; /* Reduzido para metade do espaçamento atual */
+}
+.input-text {
+    width: 100%; /* Ajusta para ocupar 100% da largura do contêiner */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+    text-align: center;
+}
+#campoevolucao.input-text {
+    height: 200px;
+    width: 100%; /* Ajusta para ocupar 100% da largura do contêiner */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+    text-align: center;
+}
+
+
+.section label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Adiciona espaçamento entre os elementos */
+}
+
+.section input[type="text"] {
+    margin-left: 10px; /* Espaçamento entre o texto e a caixa de entrada */
+    flex: 1; /* Faz com que a caixa de texto se expanda conforme necessário */
+}
+
+img {
+    max-width: 100%; /* Impede que as imagens ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5px; /* Ajustando para metade do espaçamento atual */
+}
+.checkbox-group label input {
+    margin-right: 10px;
+}
+.content .checkbox-group-title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.content .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    margin-bottom: 100px; /* Adicione uma margem inferior para elevar os botões */
+}
+.content .buttons button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Mantém a largura total */
+    height: 100px; /* Ajuste conforme necessário */
+    background-color: #d32f2f;
+    display: flex;
+    flex-direction: row; /* Itens alinhados horizontalmente */
+    justify-content: center; /* Distribui os ícones com espaçamento uniforme */
+    align-items: center;
+    padding: 0;
+    z-index: 1000;
+    
+}
+
+.sidebar img {
+    width: 35px; /* Ajuste conforme o tamanho desejado */
+    margin: 0 10px; /* Reduz a margem horizontal entre os ícones */
+    max-width: 100%; /* Impede que as imagens ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 100%; /* Permite que o contêiner use toda a largura disponível */
+        margin: 0;
+        padding: 0; /* Ajusta o padding para telas menores */
+    }
+
+    .header img {
+        width: 80%; /* Ajusta o tamanho da imagem do cabeçalho para dispositivos móveis */
+    }
+
+    .content {
+        width: 100%; /* Garante que a largura se ajuste bem em dispositivos menores */
+        padding: 20px; /* Reduz o padding interno */
+        margin-bottom: 0; /* Adiciona espaço para a `sidebar` inferior */
+       
+    }
+
+    .sidebar {
+        height: 80px; /* Diminui a altura da barra inferior */
+        
+    }
+
+    .sidebar img {
+        width: 35px; /* Aumente o tamanho para um valor mais adequado */
+        margin: 0 10px; /* Ajuste o espaçamento horizontal */
+    }
+
+    .content .buttons button {
+        padding: 8px 16px; /* Reduz o tamanho dos botões */
+        font-size: 14px; /* Diminui o tamanho da fonte dos botões */
+    }
+    .input-cell {
+        font-size: 10px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
+
+    img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        height: auto; /* Mantém a proporção */
+    }
+@media (max-width: 768px) {
+    .header {
+        width: 100%; /* Garante que a largura seja 100% em telas pequenas */
+        margin: 0;
+        padding: 0; /* Remove qualquer padding adicional */
+    }
+}
+}
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAI - Neuro</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <a href="00.Queixas2.html" class="sidebar-item"><img src="queixas.png" alt="Exame Inicial"></a>
+        <a href="01.inicial2.html" class="sidebar-item"><img src="respiratorio.png" alt="Respiratório"></a>
+        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="circulatorio.png" alt="Circulatório"></a>
+        <a href="03.Neuro2.html" class="sidebar-item active"><img src="neuro.png" alt="Neuro"></a>
+        <a href="04.Evolucao2.html" class="sidebar-item"><img src="evolucao.png" alt="Evolução"></a>
+        <a href="05.Parametros2.html" class="sidebar-item"><img src="parametros.png" alt="Parâmetros"></a>
+        <a href="index.html" class="sidebar-item"><img src="sair.png" alt="Login"></a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="PaiLogoHorizTransp.png" alt="PAI Logo">
+        </div>
+
+        <div class="content">
+            <form>
+                <fieldset class="section">
+                    <legend>Neuro</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="neuroNormal"> Normal</label>
+                        <label><input type="checkbox" id="neuroSonolencia"> Sonolência</label>
+                        <label><input type="checkbox" id="neuroObnubilacao"> Obnubilação</label>
+                        <label><input type="checkbox" id="neuroAgitacao"> Agitação</label>
+                        <label><input type="checkbox" id="neuroMidriase"> Midríase</label>
+                        <label><input type="checkbox" id="neuroPupilasMiose"> Pupilas Miose</label>
+                        <label><input type="checkbox" id="neuroComa"> Coma</label>
+                        <label><input type="checkbox" id="neuroConvulsao"> Convulsão</label>
+                        <label><input type="checkbox" id="neuroSDMeningea"> SD Meníngea</label>
+                        <label><input type="checkbox" id="neuroDeficitSensivel"> Déficit Sensível: <input type="text"></label>
+                        <label><input type="checkbox" id="neuroDeficitMotor"> Déficit Motor: <input type="text"></label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="section">
+                    <legend>Abertura Ocular</legend>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="aberturaOcular" id="abertEspont" value="Espontânea"> Espontânea (4)</label>
+                        <label><input type="radio" name="aberturaOcular" id="abertVoz" value="À voz"> À voz (3)</label>
+                        <label><input type="radio" name="aberturaOcular" id="abertDor" value="À dor"> À dor (2)</label>
+                        <label><input type="radio" name="aberturaOcular" id="abertNenhuma" value="Nenhuma"> Nenhuma (1)</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="section">
+                    <legend>Resposta Verbal</legend>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="respostaVerbal" id="respostaOrientada" value="Orientada (5)"> Orientada (5)</label>
+                        <label><input type="radio" name="respostaVerbal" id="respostaConfusa" value="Confusa (4)"> Confusa (4)</label>
+                        <label><input type="radio" name="respostaVerbal" id="respostaPalavrasInap" value="Palavras Inapropriadas (3)"> Palavras Inapropriadas (3)</label>
+                        <label><input type="radio" name="respostaVerbal" id="respostaPalavrasInco" value="Palavras Incompreensíveis (2)"> Palavras Incompreensíveis (2)</label>
+                        <label><input type="radio" name="respostaVerbal" id="respostaOcularNenhuma" value="Nenhuma(1)"> Nenhuma (1)</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="section">
+                    <legend>Resposta Ocular</legend>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="respostaOcular" id="respostaObedeceComandos" value="Obedece Comandos (6)"> Obedece Comandos (6)</label>
+                        <label><input type="radio" name="respostaOcular" id="respostaLocalizaDor" value="Localiza Dor (5)"> Localiza Dor (5)</label>
+                        <label><input type="radio" name="respostaOcular" id="respostaMovRetirada" value="Movimento de Retirada (4)"> Movimento de Retirada (4)</label>
+                        <label><input type="radio" name="respostaOcular" id="respostaFlexaoAnormal" value="Flexão Anormal (3)"> Flexão Anormal (3)</label>
+                        <label><input type="radio" name="respostaOcular" id="respostaExtensaoNormal" value="Extensão Normal (2)"> Extensão Normal (2)</label>
+                        <label><input type="radio" name="respostaOcular" id="respostaOcularNenhuma" value="Nenhuma (1)"> Nenhuma (1)</label>
+                    </div>
+                </fieldset>
+            </form>
+
+        <div class="buttons">
+            <a href="02.Circulatorio2.html"><button>Anterior</button></a>
+            <a href="04.Evolucao2.html"><button>Próximo</button></a>
+        </div>
+    </div>
+<script src="js/realce.js"></script>
+</body>
+</html>
